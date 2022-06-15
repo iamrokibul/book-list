@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Simple Book List</title>
+</head>
+<body>
+    <header>
+        <div class="container text-center">
+            <h2 class="text-capitalize m-5">Book List by Vanila JS</h2>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form action="#">
+                <label for="title">Name</label>
+                <input type="text" id="title" class="form-control mb-2" placeholder="Book name">
+                <label for="title">Author</label>
+                <input type="text" id="author" class="form-control mb-2"  placeholder="Author name">
+                <label for="title">Year</label>
+                <input type="number" id="year" class="form-control mb-4"  placeholder="Year">
+                <input type="submit" class="btn btn-success" value="Add Book">
+            </form>
+            <!-- Blank Space -->
+            <div class="p-3"></div>
+            <table class="table">
+                <tr>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Year</th>
+                </tr>
+                <tbody id="book-list"></tbody>
+            </table>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
